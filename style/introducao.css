@@ -42,7 +42,7 @@
 }
 
 .introducao p {
-  color: #636973;
+  color: var(--cinza6);
   font-size: 1.5rem;
 }
 
