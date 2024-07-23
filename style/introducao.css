@@ -1,0 +1,112 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  width: 12ch;
+  font-size: 3.75rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 800;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../imagens/deco_esquerda.svg") no-repeat center;
+  width: 100px;
+  height: 100px;
+  top: -18px;
+  left: -80px;
+  z-index: -1;
+}
+
+.introducao h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../imagens/deco_direita.svg") no-repeat center;
+  width: 100px;
+  height: 100px;
+  top: 187px;
+  left: 370px;
+  z-index: -1;
+}
+
+.introducao p {
+  color: #636973;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .paralax{
+    max-width: 500px;
+}
+
+  .introducao .paralax img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  
+  .introducao .paralax .meio {
+    left: 25%;
+    justify-items: center;
+  }
+  .introducao .paralax .fundo {
+    left: 25%;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  
+  .paralax{
+    max-width: 500px;
+  }
+
+  .introducao h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../imagens/deco_esquerda.svg") no-repeat center;
+    background-size: 25%;
+    top: -31px;
+    left: -70px;
+    z-index: -1;
+  }
+
+  .introducao h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../imagens/deco_direita.svg") no-repeat center;
+    background-size: 25%;
+    top: 105px;
+    left: 230px;
+    z-index: -1;
+  }
+
+  .introducao p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+}

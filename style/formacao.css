@@ -1,0 +1,149 @@
+.formacao {
+  background: #141414;
+  color: #ffffff;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao .subtitulo {
+  color: #424242;
+  width: 5ch;
+}
+
+.formacao-texto {
+  font-size: 1.25rem;
+  line-height: 122.1%;
+  max-width: 60ch;
+  padding-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.formacao strong {
+  color: #ffffff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background: black;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.curso::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-image: linear-gradient(180deg, #d6ff36, #4fbf07);
+  position: absolute;
+  top: 10px;
+  left: -24px;
+}
+
+.instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.formacao-extra h3::before {
+  background: url(../imagens/livro.svg);
+}
+
+.idiomas h3::before {
+  background: url(../imagens/idioma.svg);
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin: 10px;
+  margin-left: 40px;
+  font-weight: 100;
+}
+
+.idiomas {
+  margin-top: 60px;
+}
+
+.formacao-extra span {
+  margin-left: 10px;
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+  .formacao .subtitulo {
+    font-size: 6rem;
+    width: 9ch;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formacao .subtitulo {
+    font-size: 3rem;
+    width: 9ch;
+    gap: 20;
+  }
+}

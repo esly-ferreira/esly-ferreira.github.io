@@ -1,0 +1,30 @@
+.paralax {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transform-style: preserve-3d;
+}
+
+.frente {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.meio {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  transform: translateZ(-30px) scale(1.02);
+}
+
+
+.fundo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  transform: translateZ(-50px) scale(1.03);
+}
