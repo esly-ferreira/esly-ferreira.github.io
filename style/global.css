@@ -16,6 +16,10 @@ body {
   font-family: "Fira sans", Helvetica, sans-serif;
   margin: 0;
   color: var(--cinza8);
+  background-color: var(--cinza1);
+}
+svg{
+z-index: 1;
 }
 
 h1,
